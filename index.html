@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+
+    <!-- icones do bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- página de estilos -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weatherForecast" id="fundo">
+
+            <div class="locate">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div class="cityName" id="cityName"> Santa Cruz do Sul</div>
+            </div>
+
+            <div class="data">
+                <span class="temperatureContainer">
+                    <p id="temperature" class="temperature">15</p>
+                </span>
+                <span class="status">
+                    <img id="icon" src="img/iconClima/cloud-sun .svg" alt="icone do clima" >
+                    <p id="descricao">rain</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="info">
+
+            <div class="sensation infoContainer">
+
+                <div>
+                    <h2>Sensação Termica</h2>
+                    <p id="sensation">27ºC</p>
+                </div>
+
+                <span class="vSeparetor"></span>
+
+                <div >
+                    <h2>Humidade do AR</h2>
+                    <p id="humidity"> humidity</p>
+                </div>
+
+            </div>
+
+            <span class="vSeparetor"></span>
+
+            <div class="infoClima">
+
+                <div class="condition infoContainer">
+                    <h2>Condição</h2>
+                    <p id="condition">Poucas nuvens</p>
+                </div>
+
+                <span class="vSeparetor"></span>
+
+                <div class="wind infoContainer">
+                    <span>
+                        <h2>Direção do vento</h2>
+                        <p id="wind_direction"></p>
+                    </span>
+
+                    <span>
+                        <h2>Velocidade do vento </h2>
+                        <p id="wind_velocity">22 km</p>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script/sript.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</body>
+
+</html>
