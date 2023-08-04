@@ -39,7 +39,7 @@ body {
     color: var(--color-text-wite);
     font-family: var(--font-family);
     font-size: 30px;
-    height: 36px;
+    height: auto;
 }
 
 .iconLocate {
