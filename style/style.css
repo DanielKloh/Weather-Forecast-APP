@@ -39,7 +39,7 @@ body {
     color: var(--color-text-wite);
     font-family: var(--font-family);
     font-size: 30px;
-    height: auto;
+    height: 36px;
 }
 
 .iconLocate {
@@ -252,7 +252,7 @@ h2 {
     padding: 20px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    background-image: url("../img/noiteTempestade.jpg   ");
+    background-image: url("../img/noiteTempestade.gif   ");
 }
 
 .fundoGeada {

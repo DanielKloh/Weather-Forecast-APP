@@ -42,7 +42,7 @@ function montarDados(data) {
   condition.innerText = data.data.condition;
   sensation.innerText = data.data.sensation + "º";
   humidity.innerText = data.data.humidity + "%";
-  
+
   //sol
   if (data.data.icon === "1") {
     fundo.setAttribute("class", "fundoSol");
