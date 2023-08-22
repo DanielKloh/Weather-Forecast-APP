@@ -1,90 +1,533 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecast</title>
+    <title>Brasileirão</title>
 
-    <!-- icones do bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-    <!-- página de estilos -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/tabela.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="icon" href="image/icone_site.ico">
 </head>
 
 <body>
 
-    <div class="container">
+    <header>
+        <!-- menu lateral -->
+        <nav class="show_menu " id="show_menu">
+            <a class="show_menu_text">brasileirão</a><br>
+            <a class="show_menu_text">times</a><br>
+            <a class="show_menu_text">tabela</a><br>
+            <a class="show_menu_text">vídeos</a><br>
+            <a class="show_menu_text">cartola</a><br>
+            <a class="show_menu_text">cartola express</a><br>
+            <a class="show_menu_text">baixe o app ge</a><br>
+            <a class="show_menu_text">futebol internacional</a><br>
+            <a class="show_menu_text">selecção brasileira</a><br>
+            <a class="show_menu_text">vôlei</a><br>
+            <a class="show_menu_text">nba</a><br>
+            <a class="show_menu_text">surfe</a><br>
+            <a class="show_menu_text">olimpíadas</a><br>
+            <a class="show_menu_text">combate</a><br>
+            <a class="show_menu_text">premiere</a><br>
+            <a class="show_menu_text">fórmula 1</a><br>
+            <a class="show_menu_text">esports</a><br>
+            <a class="show_menu_text">eu atleta</a><br>
+            <a class="show_menu_text">podcasts</a><br>
+            <a class="show_menu_text">na tv</a><br>
+            <a class="show_menu_text">principios editoriais</a><br>
+            <a class="show_menu_text">outros esportes</a><br>
+        </nav>
 
-        <div class="weatherForecast" id="fundo">
+        <div class="fundo" id="fundo" onclick="menu()"></div>
+        <!-- menu lateral -->
 
-            <div class="locate">
-                <i class="bi bi-geo-alt-fill"></i>
-                <div class="cityName" id="cityName"> Santa Cruz do Sul</div>
-            </div>
 
-            <div class="data">
-                <span class="temperatureContainer">
-                    <p id="temperature" class="temperature">15</p>
-                </span>
-                <span class="status">
-                    <img id="icon" src="img/iconClima/cloud-sun .svg" alt="icone do clima" >
-                    <p id="descricao">rain</p>
-                </span>
+        <!-- links -->
+        <div style="background-color: #ededed; width: 100%;">
+            <div class="conteiner_link">
+                <div class="links">
+                    <span class="globo_com">globo.com </span>
+                    <div class="v-separator"></div>
+                    <span class="g1">g1</span>
+                    <div class="v-separator"></div>
+                    <span class="ge_topo">ge</span>
+                    <div class="v-separator"></div>
+                    <span class="gshow">gshow</span>
+                    <div class="v-separator"></div>
+                    <span class="globopay">globoplay</span>
+                </div>
+
+                <div class="links2">
+                    <a class="assine_ja" href="">ASSINE JÁ</a>
+                    <button class="entrar">ENTRAR ></button>
+                </div>
             </div>
         </div>
 
-        <div class="info">
+        <!-- links -->
 
-            <div class="sensation infoContainer">
+
+        <!-- conteiner 1 -->
+
+        <div class="conteiner">
+
+            <button class="menu" onclick="menu()">
+                <img src="image/risquinho.png" class="menu_risquinho">
+                <span class="meun_texto">MENU</span>
+            </button>
+
+            <img class="ge" src="image/GE.jpg"></img>
+
+            <span class="mosaico">
+                <img class="escudo" src="image/escudo.png" alt="escudinho">
+                <div class="mosaico_conteiner">
+
+                    <nav class="mosaico_label_conteiner" style="margin-top: 5px;">
+
+                        <div class="mosaico_label" onclick="serieA()">SÉRIE A</div>
+                        <div class="mosaico_label" onclick="serieB()">SÉRIE B</div>
+                        <div class="mosaico_label" onclick="serieC()">SÉRIE C</div>
+
+                    </nav>
+
+
+                    <li id="serieA" class="">
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/12/gremio.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/12/26/Cuiaba_EC.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/09/30/Corinthians.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/06/28/bragantino.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/12/santos.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/10/atletico-mg.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/internacional.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-svg.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/02/28/America-MG-VERDE-fev2019-01.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/03/01/GOIAS-2021.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/09/19/Fortaleza_2021_1.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/09/04/vasco_SVG.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/09/09/Athletico-PR.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/coritiba.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                    </li>
+
+                    <li id="serieB" class="serieNaoAtual">
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/10/atletico-mg.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/internacional.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-svg.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/02/28/America-MG-VERDE-fev2019-01.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/12/gremio.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/12/26/Cuiaba_EC.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/09/19/Fortaleza_2021_1.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/09/04/vasco_SVG.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/09/09/Athletico-PR.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/coritiba.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/09/30/Corinthians.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/06/28/bragantino.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/12/santos.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/03/01/GOIAS-2021.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg"
+                                class="logo_time_mosaico">
+                        </div>
+
+
+
+                    </li>
+
+                    <li id="serieC" class="serieNaoAtual">
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/03/01/GOIAS-2021.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg"
+                                class="logo_time_mosaico">
+                        </div>
+
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/10/atletico-mg.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/internacional.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-svg.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/02/28/America-MG-VERDE-fev2019-01.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/09/30/Corinthians.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/06/28/bragantino.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/12/santos.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/09/19/Fortaleza_2021_1.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2021/09/04/vasco_SVG.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2019/09/09/Athletico-PR.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/coritiba.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                        <div class="mosaico_image_conteiner">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/03/12/gremio.svg"
+                                class="logo_time_mosaico">
+                            <img src="https://s.sde.globo.com/media/organizations/2018/12/26/Cuiaba_EC.svg"
+                                class="logo_time_mosaico">
+                        </div>
+                    </li>
+                </div>
+            </span>
+
+
+
+            <span class="brasileirao d2">BRASILEIRÃO SÉRIE A</span>
+
+            <div class="buscar_campo d1">
+                <input placeholder=" BUSCAR" class="buscar camposBusca"></input>
+            </div>
+
+        </div>
+        <!-- conteiner 1 -->
+
+
+        <!-- conteiner 2 -->
+        <div class="conteiner2">
+            <a class="conteiner2_elementos classificação">classificação</a>
+            <a class="conteiner2_elementos simulador">simulador</a>
+            <a class="conteiner2_elementos video">vídeo</a>
+            <a class="conteiner2_elementos VAR">VAR</a>
+        </div>
+        <!-- conteiner 2 -->
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <!-- tabela dos jogos e classificação -->
+
+            <article class="tabela_classificacao_jogos">
+
+
+                <div class="tabela_classificao_equipes">
+
+                    <h2 class="tabela_titulo">tabela</h2>
+
+                    <div class="organizacao_tabela_classificacao">
+
+                        <table class="tabela_classificacao_p1">
+
+                            <thead>
+                                <th class="celula_tabela_classificacao_titulo" colspan="5">CLASSIFICAÇÃO</th>
+                            </thead>
+
+                            <tbody id="tabela_classificacao">
+
+                            </tbody>
+
+                        </table>
+
+                        <table class="table-dados tabela_classificacao_p2">
+
+                            <thead>
+                                <tr>
+                                    <th class="celula_pontos_topo">P</th>
+                                    <th class="celula_pontos_topo">J</th>
+                                    <th class="celula_pontos_topo">V</th>
+                                    <th class="celula_pontos_topo">E</th>
+                                    <th class="celula_pontos_topo">D</th>
+                                    <th class="celula_pontos_topo">GP</th>
+                                    <th class="celula_pontos_topo">GC</th>
+                                    <th class="celula_pontos_topo">SG</th>
+                                    <th class="celula_pontos_topo">%</th>
+                                    <th class="celula_pontos_topo">ÚLT. JOGOS</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tabela_resultados">
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <!-- legenda tabelta classifcação -->
+                    <div class="legenda">
+                        <div class="legenda_campeonato">
+                            <div class="legenda_campeonato_resltado">
+                                <svg class="legenda_campeonato_resltado_icon rebaixado"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi   bi-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span>rebaixado</span>
+
+
+                                <svg class="legenda_campeonato_resltado_icon libertadores"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi   bi-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span>libertadores</span>
+
+                                <svg class="legenda_campeonato_resltado_icon prelibertadores"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi   bi-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span>prelibertadore</span>
+                                <svg class="legenda_campeonato_resltado_icon sulamericana"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi   bi-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span>sul-americana</span>
+                            </div>
+                            <div>
+                                <img src="image/seta-para-cima.png" alt="" class="legenda_subio">
+
+                                <span>subio</span>
+
+                                <img src="image/seta-para-baixo.png" alt="" class="legenda_caio">
+                                <span>caio</span>
+
+                                <svg class="legenda_campeonato_resltado_icon legenda_manteve"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi   bi-square" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                </svg>
+                                <span>manteve</span>
+                            </div>
+                        </div>
+                        <div class="legenda_resultado">
+                            <div class="bolinha_legenda legenda_vitoria"></div>
+                            <span class="legenda_resultado_texto">vitoria</span>
+                            <div class="bolinha_legenda legenda_empate"></div>
+                            <span class="legenda_resultado_texto">empate</span>
+                            <div class="bolinha_legenda legenda_derrota"></div>
+                            <span class="legenda_resultado_texto ">derrota</span>
+                        </div>
+                    </div>
+
+                    <span onclick="abrirRegulamento()" class="texto_regulamento">Regulamento</span>
+                    <div id="regulamento-caixa" class="regulamento-caixa">
+                        <div class="regulamento-conteudo">
+                            <svg onclick="fecharRegulamento()" class="regulamento-fechar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                            </svg>
+                            <div class="regulamento-scroll">
+                                <h2 class="regulamento-titulo">Regulamento</h2>
+                                <div class="regulamento-texto">
+                                    As 20 equipes se enfrentam em turno e returno e, ao fim das 38 rodadas, o time com o maior número de pontos
+                                    fica com o título brasileiro, enquanto os quatro últimos são rebaixados para a Série B. Em caso de igualdade 
+                                    na pontuação, são critérios de desempate: 1) mais vitórias, 2) melhor saldo de gols, 3) mais gols pró, 
+                                    4) confronto direto, 5) menos cartões vermelhos, 6) menos cartões amarelos, 7) sorteio. 
+                                    Os quatro primeiros entram na fase de grupos da Libertadores, enquanto o quinto e o sexto colocados disputam 
+                                    as fases prévias da Libertadores. Caso o campeão da Libertadores e/ou o campeão da Copa do Brasil e/ou o campeão 
+                                    da Sul-Americana estejam no G-6, a equipe seguinte garante vaga na competição continental.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tabela_jogos">
+
+                    <h2 class="tabela_titulo">JOGOS</h2>
+
+                    <div>
+                        <nav class="navegacao_jogos">
+                            <span id="seteaEsquerda" onclick="rodadaAnterior()" class="navegacao_jogos_seta"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                </svg> </span>
+
+                            <div class="navegacao_texto_jogos" id="rodada"></div>
+
+                            <span onclick="proximaRodada()" id="seteaDireita" class="navegacao_jogos_seta"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg></span>
+                        </nav>
+
+                        <input type="hidden" id="proximaRodada">
+                        <input type="hidden" id="rodadaAnterior">
+
+                        <ul id="lista_jogos" class="lista_jogos">
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- tabela dos jogadores -->
+        <section>
+
+            <div class="conteiner_jogador">
+                <h2 class="tabela_titulo">PRINCIPAIS ARTILHEIROS</h2>
+
+                <div class="tabela_jogadores_conteiner">
+
+                    <table class="tabela_jogadores">
+
+                        <thead>
+                            <th class="celula_tabela_classificacao_titulo" colspan="3">RANKING</th>
+                            <th class="celula_tabela_classificacao_titulo" colspan="1">gols</th>
+                        </thead>
+
+                        <tbody id="tabelaArtilharia">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="conteiner_footer">
+
+            <div>
+
+                <div class="diretorion_footer_esquerda">
+                    <img src="image/GE.jpg" alt="">
+                    <span class="footer_texto">times</span>
+                    <div class="v-separator"></div>
+                    <span class="footer_texto">seleções</span>
+                    <div class="v-separator"></div>
+                    <span class="footer_texto">esportes</span>
+                </div>
 
                 <div>
-                    <h2>Sensação Termica</h2>
-                    <p id="sensation">27ºC</p>
+                    <a class="footer_texto_link" href="https://github.com/DanielKloh">© Copyright 2023 Daniel
+                        Kloh</a>
                 </div>
-
-                <span class="vSeparetor"></span>
-
-                <div >
-                    <h2>Humidade do AR</h2>
-                    <p id="humidity"> humidity</p>
-                </div>
-
             </div>
 
-            <span class="vSeparetor"></span>
+            <div class="diretorion_footer_direita">
 
-            <div class="infoClima">
+                <div class="footer_texto">globo</div>
 
-                <div class="condition infoContainer">
-                    <h2>Condição</h2>
-                    <p id="condition">Poucas nuvens</p>
+                <div class="footer_direita">
+                    <span class="footer_texto">principais editorias</span>
+                    <div class="v-separator"></div>
+                    <span class="footer_texto">política de privacidade</span>
+                    <div class="v-separator"></div>
+                    <span class="footer_texto">minha conta</span>
+                    <div class="v-separator"></div>
+                    <span class="footer_texto ">anuncie conosco</span>
+
                 </div>
-
-                <span class="vSeparetor"></span>
-
-                <div class="wind infoContainer">
-                    <span>
-                        <h2>Direção do vento</h2>
-                        <p id="wind_direction"></p>
-                    </span>
-
-                    <span>
-                        <h2>Velocidade do vento </h2>
-                        <p id="wind_velocity">22 km</p>
-                    </span>
-                </div>
-
             </div>
-
         </div>
 
-    </div>
+    </footer>
 
-    <script src="script/sript.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script src="script.js"></script>
 
 </html>

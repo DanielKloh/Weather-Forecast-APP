@@ -1,0 +1,663 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.imagem_logo {
+    width: 30px;
+    height: 30px;
+}
+
+table {
+    border-spacing: 0;
+}
+
+.imagemLogo {
+    height: 30px;
+    width: 30px;
+}
+
+.imagemCentralizada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61px;
+}
+
+td {
+    border-bottom: solid #ddd7d7 1px;
+}
+
+.table-dados td:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+.tabela_classificacao_p2 {
+    width: 70%;
+    overflow-x: overlay;
+    display: block;
+}
+
+.tabela_classificacao_jogos {
+    padding-top: 30px;
+
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.tabela_classificao_equipes {
+    width: 65%;
+}
+
+.organizacao_tabela_classificacao {
+    display: flex;
+}
+
+
+
+.tabela_classificacao_p1 {
+    width: 30%;
+}
+
+.tabela_classificacao_p2 {
+    width: 70%;
+    overflow-x: overlay;
+}
+
+.tabela_titulo {
+    color: #111;
+    font-family: 'opensans', sans-serif;
+    font-size: 1.625em;
+    letter-spacing: -0.04em;
+    line-height: 1.75em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+tr {
+    height: 50px;
+}
+
+.celula_tabela_classificacao_titulo {
+    height: 48px;
+    text-align: left;
+
+    font-size: 12px;
+    font-family: 'opensans', sans-serif;
+    color: #999;
+
+    border-top: solid #ddd7d7 1px;
+    border-bottom: solid #999 1px;
+}
+
+
+
+.celula_tabela_classificacao_numero {
+    width: 17px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'opensans', sans-serif;
+
+}
+
+.celula_tabela_classificacao_numero_azul {
+    color: blue;
+}
+
+.celula_tabela_classificacao_numero_azul_claro {
+    color: rgb(0, 255, 234);
+}
+
+.celula_tabela_classificacao_numero_verde {
+    color: green;
+}
+
+.celula_tabela_classificacao_numero_cinza {
+    color: gray;
+}
+
+.celula_tabela_classificacao_numero_vermelho {
+    color: red;
+}
+
+.celula_tabela_classificacao_time {
+    width: 100px;
+
+    text-align: left;
+    font-size: 21px;
+    font-family: 'opensans', sans-serif;
+    color: #030303;
+}
+
+.celula_tabela_classificacao_pontuacao {
+    width: 16px;
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'opensans', sans-serif;
+    color: res;
+}
+
+.celula_tabela_classificacao_resultado_icone {
+    text-align: center;
+    align-items: center;
+}
+
+.celula_tabela_classificacao_icon {
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.resultado_ganhou {
+    color: green;
+}
+
+.resultado_perdeu {
+    color: red;
+}
+
+.resultado_empatou {
+    color: #999;
+    background-color: #999;
+    border: solid #999 1px;
+}
+
+
+.fundoRegulamento{
+    width: 100%;
+    height: 100%;
+    z-index: 9000;
+    background-color: #555;
+}
+
+
+
+.celula_pontos_topo {
+    padding: 0 20px;
+
+    width: 45px;
+    height: 50px;
+    text-align: center;
+
+    font-size: 12px;
+    font-family: 'opensans', sans-serif;
+    color: #999;
+    white-space: nowrap;
+
+    border-top: solid #ddd7d7 1px;
+    border-bottom: solid #999 1px;
+
+}
+
+
+
+.celula_pontos_negrito {
+    font-weight: 700;
+}
+
+
+.celula_pontos {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'opensans' sans-serif;
+    color: #030303;
+    white-space: nowrap;
+    height: 60px;
+}
+
+
+
+
+
+.celula_pontos_bolinha {
+    padding: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bolinha_ultimos_jogos {
+    margin-left: 2px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+.bolinha_ultimos_jogos_ganhou {
+    background-color: green;
+}
+
+.bolinha_ultimos_jogos_perdeu {
+    background-color: red;
+}
+
+.bolinha_ultimos_jogos_empatou {
+    background-color: gray;
+}
+
+
+
+
+li {
+    list-style-type: none;
+}
+
+
+
+.navegacao_jogos {
+    height: 48px;
+
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    border-top: solid #ddd7d7 1px;
+    border-bottom: solid #999 1px;
+
+    text-align: center;
+
+    white-space: nowrap;
+    border-top: solid #ddd7d7 1px;
+    border-bottom: solid #999 1px;
+}
+
+.navegacao_esquerda_jogos {
+    color: #06aa48;
+    cursor: pointer;
+    width: 40px;
+}
+
+.navegacao_texto_jogos {
+    color: #111;
+    font-family: 'opensans', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navegacao_jogos_seta {
+    color: #06aa48;
+    cursor: pointer;
+    text-align: right;
+    width: 40px;
+    cursor: pointer;
+}
+
+.navegacao_jogos_seta_limit {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+
+
+.tabela_jogos {
+    padding-left: 45px;
+    margin-left: 45px;
+
+    border-left: solid #ddd7d7 1px;
+    width: 35%;
+}
+
+.placar_box {
+    text-align: center;
+    color: #999;
+}
+
+.data_jogo {
+    display: flex;
+    font-family: opensans, sans-serif;
+    font-size: 0.6875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+
+.data_jogo_data {
+    color: #555;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+
+
+.titulo_rodada {
+    width: 200px;
+    height: 38px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'opensans', sans-serif;
+    color: #030303;
+}
+
+
+.jogos_conteiner_times {
+    height: 70px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.jogos_conteiner {
+    justify-content: center;
+    margin: auto;
+    border-bottom: solid #ddd7d7 1px;
+    height: 101px;
+    /* compo da data e hora do jogo */
+}
+
+
+.lista_jogos {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.nome_times {
+    color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo_time {
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.placarTime {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.resultadoJogo {
+    color: #06aa48;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+.legenda {
+
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+.legenda_campeonato {
+    display: flex;
+    align-items: center;
+}
+
+.legenda_campeonato_resltado {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.legenda_campeonato_resltado_icon {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    height: 9px;
+    width: 9px;
+    align-items: center;
+}
+
+.rebaixado {
+    background-color: red;
+}
+
+.libertadores {
+    background-color: blue;
+}
+
+.prelibertadores {
+    background-color: aqua;
+}
+
+.sulamericana {
+    background-color: green;
+}
+
+.legenda_caio {
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    align-items: center;
+}
+
+.legenda_subio {
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    align-items: center;
+}
+
+.legenda_manteve {
+    background-color: #999;
+}
+
+
+.legenda_resultado {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.legenda_resultado_texto {
+    margin-right: 10px;
+}
+
+.bolinha_legenda {
+    margin: 5px;
+    border-radius: 50%;
+
+    width: 8px;
+    height: 8px;
+}
+
+.legenda_vitoria {
+    background-color: #06aa48;
+}
+
+.legenda_empate {
+    background-color: #999;
+}
+
+.legenda_derrota {
+    background-color: red;
+}
+
+.conteiner_regulamento {
+    width: 0px;
+    height: 0px;
+}
+
+.conteiner_regulamento_exibido {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.205);
+    position: absolute;
+    z-index: 9999;
+
+}
+.regulamento-conteudo{
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    height: 350px;
+    left: 50%;
+    margin: -180px 0 0 -290px;
+    padding: 46px 38px;
+    top: 50%;
+    width: 580px;
+}
+
+.regulamento-caixa{
+    display: none;
+    background-color: rgba(255,255,255,0.9);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5000;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.regulamento-conteudo{
+    box-shadow: 0 0 8px rgba(0,0 ,0 ,0.2);
+    height: 260px;
+    left: 50%;
+    margin: -180px 0 0 -290px;
+    padding: 46px 38px;
+    top: 50%;
+    width: 480px;
+    background-color: #FCFCFC;
+    position: absolute;
+    text-align: right;
+}
+
+.regulamento-fechar{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.texto_regulamento {
+    color: #06aa48;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.texto_regulamento_exibido {
+    width: 40%;
+    height: 40%;
+
+    background-color: #ededed;
+    color: #999;
+    z-index: 99990;
+}
+
+.regulamento-texto{
+    text-align: left;
+
+}
+
+
+.regulamento-titulo{
+    text-align: left;
+}
+.conteiner_jogador {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.tabela_jogadores_conteiner {
+    height: 390px;
+    overflow-y: auto;
+}
+
+.tabela_jogadores {
+    width: 100%;
+
+
+}
+
+.celula_tabela_jogadores {
+    width: 20px;
+    height: 60px;
+    padding: 15px;
+}
+
+.classificacao_jogador {
+    color: #999;
+    width: 1px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'opensans', sans-serif;
+}
+
+.imagem_jogador {
+    border-radius: 100px;
+    height: 50px;
+    padding: 7px;
+}
+
+.imagem_logo_time {
+    height: 30px;
+}
+
+.jogador_info {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.nome_jogador {
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #030303;
+    font-size: 20px;
+}
+
+.nome_posicao {
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    width: 100px;
+    color: #999;
+}
+
+
+.gols {
+    margin-left: auto;
+    padding-right: 20px;
+    margin-left: 50px;
+    color: #333;
+    font-family: 'opensans-bold', arial, sans-serif;
+    font-size: 26px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .tabela_classificacao_jogos {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    .tabela_classificao_equipes {
+        width: 100%;
+    }
+
+    .tabela_jogos {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1360px) {
+
+    .data_jogo {
+        font-size: 0.65em;
+    }
+}
